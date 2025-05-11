@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Çivi Heykel Portföyü</title>
+    <style>
+      :root {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        --primary: #111;
+        --accent: #d94600;
+      }
+      body {
+        margin: 0;
+        padding: 0;
+        color: var(--primary);
+        background: #fafafa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header {
+        width: 100%;
+        padding: 2rem 1rem 0.5rem;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+      }
+      /* Video grid */
+      .videos {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 16px;
+        width: 100%;
+        max-width: 960px;
+        padding: 0 1rem 1.5rem;
+      }
+      .videos video {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      }
+      .caption {
+        text-align: center;
+        margin-top: 4px;
+        font-size: 0.9rem;
+      }
+      /* Image gallery */
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+        width: 100%;
+        max-width: 960px;
+        padding: 0 1rem 3rem;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+        transition: transform 0.3s ease;
+      }
+      .gallery img:hover {
+        transform: scale(1.03);
+      }
+      footer {
+        font-size: 0.875rem;
+        color: #777;
+        padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Çivi Heykel Portföyü</h1>
+    </header>
+
+    <!-- Video Gallery -->
+    <section class="videos">
+      <div>
+        <video controls poster="assets/Image2.jpg">
+          <source src="assets/video1.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <p class="caption">Nail Woman</p>
+      </div>
+      <div>
+        <video controls poster="assets/Image4.jpg">
+          <source src="assets/video2.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <p class="caption">Nail Man</p>
+      </div>
+      <div>
+        <video controls poster="assets/Image4.jpg">
+          <source src="assets/video3.mp4" type="video/mp4" />
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+        <p class="caption">Nail Man</p>
+      </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery">
+      <img src="assets/Image1.jpg" alt="Nail Fish" />
+      <img src="assets/Image2.jpg" alt="Nail Woman" />
+      <img src="assets/Image3.jpg" alt="Nail Woman" />
+      <img src="assets/Image4.jpg" alt="Nail Man" />
+    </section>
+
+    <footer>
+      © 2025 Cemal D. — Tüm hakları saklıdır.
+    </footer>
+  </body>
+</html>
